@@ -7,7 +7,7 @@ const app = express();
 app.use(express.static('./dist/IONIC-TGPLATFORM-APP'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'IONIC-TGPLATFORM-APP'}),
+    res.sendFile('index.html', {root: 'dist/IONIC-TGPLATFORM-APP'}),
 );
 
 // Start the app by listening on the default Heroku port
